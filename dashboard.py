@@ -145,7 +145,6 @@ def create_view_positions(positions: dict):
     hide_index=True,
   )
 
-
 def create_view_rebalancing_stats( target_weights: pd.DataFrame | pd.Series, position: dict[str, float]):
   target_coins = set(target_weights.index)
   cur_coins = set(position.keys())

@@ -46,6 +46,7 @@ def generate_target_weights(top_coins: list[str], timeframe: str) -> pd.DataFram
   total_inv_vol = signal_coins_df['inv_vol'].sum()
   signal_coins_df['normalized_weight'] = signal_coins_df['inv_vol'] / total_inv_vol
   signal_coins_df['clipped_weight'] = signal_coins_df['normalized_weight'].clip(upper=0.2)
+  signal_coins_df.loc[~signal_coins_df['is_long'], 'clipped_weight'] *= -1
 
   return signal_coins_df[['clipped_weight']]
 
