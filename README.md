@@ -1,8 +1,8 @@
-# Trend Following Dashboard 📈
+# Trend Following Dashboard
 
 A real-time, automated trend-following dashboard for Hyperliquid perps built with Python.
 
-## 🖥️ Preview
+## Preview
 
 ### Dashboard Screenshot
 ![Dashboard Screenshot](dashboard.png)
@@ -10,7 +10,7 @@ A real-time, automated trend-following dashboard for Hyperliquid perps built wit
 ### Strategy Demo
 [Watch the demo!](https://youtu.be/R-r0mxRnm9A)
 
-## 🧠 Strategy Overview
+## Strategy Overview
 
 This system uses a simple 5 day breakout signal of a 20 day high/low to take a position long/short. We use inverse volatility weighting
 
@@ -18,22 +18,22 @@ This system uses a simple 5 day breakout signal of a 20 day high/low to take a p
 
 ---
 
-## 📊 Dashboard Features
+## Dashboard Features
 
 Built with **Streamlit**, the dashboard shows:
 
-- 🔎 Current open positions
-- 🤖 Automated rebalancing
-- 📈 Portfolio P&L tracking
-- 💰 Volatility-adjusted sizing logic
-- 🧑‍💻 Chart showing historic buy and sell signals
+- Current open positions
+- Automated rebalancing
+- Portfolio P&L tracking
+- Volatility-adjusted sizing logic
+- Chart showing historic buy and sell signals
 
 
 All data pulled via the **Hyperliquid API**. Designed for **daily rebalancing**.
 
 ---
 
-## 🔧 Stack
+## Stack
 
 - `Python` — strategy logic + API integration
 - `Streamlit` — dashboard UI
@@ -42,7 +42,7 @@ All data pulled via the **Hyperliquid API**. Designed for **daily rebalancing**.
 
 ---
 
-## 📦 Prerequisites
+## Prerequisites
 
 Make sure you have:
 
@@ -54,7 +54,7 @@ Make sure you have:
   INFO_KEY=your_hyperliquid_api_key
 
 
-## 🛠️ Full Setup
+## Full Setup
 ### 1. Clone the repo
 ```
 git clone https://github.com/yourusername/trend-dashboard.git
